@@ -43,7 +43,7 @@ function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const profile_url = yield ghAvatar.default(core.getInput('username'));
-            core.info('profile url' + profile_url);
+            core.info(`profile url ${profile_url}`);
             core.setOutput('profile_url', profile_url);
         }
         catch (error) {
